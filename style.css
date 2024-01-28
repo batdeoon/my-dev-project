@@ -1,0 +1,662 @@
+<style> @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,Reem+Kufi+Ink&display=swap,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); </style>
+
+*{
+    font-family:'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;    
+}
+/* Style the header */
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 9px;
+    background-color: #c1ac5a;
+    box-shadow: 0 0 40px #92a1a681;
+}
+/*logo name*/
+.logoname a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 600;
+}
+img#photo-logo {
+    width: 100px; 
+    border-radius : 100%;
+}
+/*navigation*/
+.navigation a{
+    color: #834f1a;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding-left : 10px;
+}
+.navigation a:hover{
+    color: #5a13a6
+}
+/*welcome section*/
+section{
+    padding: 110px 155px;
+}
+.main{
+    width: 200%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(imges/scholkid.JPG)no-repeat;
+    background-size: cover;
+    background-position:  50% 30%;
+    background-attachment: fixed;
+}
+
+.main h2 {
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px #035f7a;
+}
+.main h2 span{
+    color: #85eded;
+    font-weight: 600;
+    font-size: 1.9em;
+    letter-spacing: -1px;
+}
+.main h3 {
+    color: #330554;
+    text-shadow: 2px 2px 5px white;
+    font-size: 1.4em;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-top: -20px;
+}
+.main-btn{
+    display: inline-block;
+    margin-bottom: 40px;
+    padding: 0.9375em 2.1875em;
+    border-radius: 50px;
+    border: 2px solid #0a634523% 61% / 0.138);
+    color: rgb(0, 238, 255);
+    background-color: rgba(10, 99, 69, 0.362);
+    font-size: 1.2em;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.6s ease;
+}
+.main-btn:hover{
+    background-color:rgba(10, 99, 69, 0.822);
+    transform: scale(.9,.9);
+}
+.social-icons a {
+    padding-right: 20px;
+    font-size: 1.6em;
+    /*color: #fff;*/
+}
+/*custom color with the logo color*/
+.fa-linkedin {
+    color: #5eb3d7
+}
+.fa-x-twitter{
+    color: #45b138;
+}
+.fa-youtube{
+    color:#dfbb09;
+}
+.fa-instagram{
+    color: rgb(211, 77, 197);
+}
+/*cards services*/
+.services {
+    background-color: #c8eaea;
+}
+.services-title {
+    display: flex;
+    justify-content: center;
+    color: #2e5f65;
+    font-size: 3em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.services-content {
+    display: flex;
+    justify-content: center; 
+    flex-direction: row;
+    flex-wrap: wrap;
+ 
+ }
+.services-card {
+    background-color: #5f978a52;
+    width: 13.1em;
+    box-shadow: 0 5px 25px #01010140;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    transition: 0.9s ease;
+}
+.services-card :hover{
+    transform: scale(1.1);
+} 
+.services-card .services-icon {
+color: #f5f1f1;
+font-size: 7em;
+text-align: center;
+}
+.services-info {
+    text-align: center;
+}
+.services-info h3 {
+    color: #063136;
+    font-size: 1.3em;
+    font-weight: 990;
+    margin: 10px;
+}
+.services-info p {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 5px;
+}
+/*Learning section*/
+.Learning {
+    background-color: #cfe8b0;
+}
+.Learning-title{
+    color:#4d7a53;
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.Learning-content {
+    margin-top: 30px;
+     display: flex;
+    justify-content: center; 
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.learning-card {
+    background-color: #cbf696;
+    border: 1px solid #a8c478;
+    min-height:6em;
+    width: 14em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 9px;
+    transition: 0.7s ease;
+}
+.learning-card:hover {
+    transform: scale(1.1)
+}
+.learning-card:hover .learning-image {
+    opacity: 0.8;
+}
+.learning-image img {
+    width: 100%;
+}
+.learning-info {
+  padding: 0.5em;
+  
+}
+.learning-category {
+    font-size: 1em;
+    font-weight: 600;
+    color: #063136;
+    text-align: center;
+}
+.learning-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    
+    margin-bottom: -0.2em;
+}
+.learning-title span{
+    font-size: 0.6em;
+    font-weight: 900;
+    margin-left: -0.1em;
+    margin-bottom: -0.9em;
+}
+.more-details {
+ text-decoration: none;
+ color: #063136;
+ font-size: 0.6em;
+ font-weight: 700;
+}
+.more-details:hover {
+        color: #7bc003;
+}
+/*contect section*/
+.contact-content{
+   color: #c54f24;
+    padding: 10px;
+    margin: 10px;
+     display: flex;
+    justify-content: center; 
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.contact{
+    background-color: #f3d1a0
+}
+.contact-title{
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    margin-bottom: 30px;
+    font-size: 3em;
+    color:#f48200
+}
+.contact-icon{
+    font-size: 3em;
+    color: #d88b04;
+    text-align: center;
+}
+.contact-card{
+  background-color: #c89b3952;
+    width: 13.1em;
+    box-shadow: 0 5px 25px #01010140;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
+.contact-info h3 {
+    color: #4e2c0d;
+    font-weight: 800;
+}
+.contact-info p {
+    font-size: 1.2em;
+    color: #f0831e;
+    font-weight: 900;
+}
+/* Style the footer */
+
+.footer {
+    background-color: #efe4ef;
+    padding: 0.1em;
+    margin: 10px;
+    display: flex; 
+    justify-content: space-between;  
+}
+
+.footer p {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 5px;
+    color: #a597ab;
+}
+
+.footer a {
+    font-size: 1.6em;
+    padding: 0 12px 0 0 ;
+    color: #a597abe7;
+}
+/*media*/
+@media (max-width:1023px) {
+    header{
+        width: 76.5%;
+      /*  padding: 0.4em;*/
+        align-items: center;
+     
+    }
+    img#photo-logo{
+        width: 38px; 
+        border-radius : 100%;
+    }
+    .logoname a{
+        font-size: 0.5em;
+    }
+    .navigation{
+        font-size: 0.4em;
+        padding : 0.1em;
+    }
+    .tite{
+       font-size: 0.8em;
+    }
+    .section{
+        padding: 10px 15px;
+    }
+    .main{
+        padding: .1em 1em;
+        width: 76.5%;
+        align-items: center;
+        background-position:  94% 70%;
+        background-attachment: fixed;
+        
+    }
+    .main h2{
+        font-size: 1.1em;
+    }
+    .main h2 span{
+        font-size: 1.4em;
+    }
+    .main h3{
+        font-size: 1.04em;
+    }
+    .main-btn{
+        font-size: 0.8em;
+    }
+    .social-icons{
+        font-size: 0.8em;
+    }
+    .services{
+        padding: .1em 1em;
+        width: 77%;
+       
+    }
+    .services-title{
+        font-size: 1.4em;
+        padding: 0.1em;
+        margin-top: 1em;
+        text-align: center;
+    }
+    .services-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .services-card{
+        font-size: 0.9em;
+        align-items: center; 
+        margin-bottom: 2em;
+    }
+    .Learning{
+        width: 76.5%;
+        padding: .1em 1em;
+    }
+    .Learning-title{
+        font-size: 1.3em;
+        padding: 0.1em;
+        margin-top: 2em;
+        text-align: center;
+    }
+    .Learning-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact{
+        padding: .1em 1em;
+        width: 77%;
+    }
+    .contact-title{
+        font-size: 1.3em;
+        padding: 0.1em;
+        margin-top: 1em;
+        text-align: center;
+    }
+         
+    .contact-card{
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0.1em;
+    }
+    .contact-icon{
+        font-size:1.9em;
+    }
+    .contact-info{
+        font-size: 1em;
+        padding: 1em 1.1em;
+    }
+    .footer{
+        font-size: 0.6em;
+        width: 81%;
+    }
+    .footer-icons{
+        /* margin: 1px 55px 1px 1px;*/
+      /*  padding: .1em .1em;*/
+    }
+    .footer-title{
+       font-size: 0.9em;
+    
+    }
+  
+}
+ /*media iphone-x 2*/
+ @media (max-width: 641px) {
+    header{
+        width: 92.5%;
+      /*  padding: 0.4em;*/
+        align-items: center;
+     
+    }
+    img#photo-logo{
+        width: 38px; 
+        border-radius : 100%;
+    }
+    .logoname a{
+        font-size: 0.6em;
+    }
+    .navigation{
+        font-size: 0.5em;
+        padding : 0.1em;
+    }
+    .tite{
+       font-size: 0.8em;
+    }
+    .section{
+        padding: 10px 15px;
+    }
+    .main{
+        padding: .1em 1em;
+        width: 97.5%;
+        align-items: center;
+        background-position:  74% 70%;
+        background-attachment: fixed;
+        
+    }
+    .main h2{
+        font-size: 1.3em;
+    }
+    .main h2 span{
+        font-size: 1.3em;
+    }
+    .main h3{
+        font-size: 1.1em;
+    }
+    .main-btn{
+        font-size: 0.9em;
+    }
+    .social-icons{
+        font-size: 0.8em;
+    }
+    .services{
+        padding: .1em 1em;
+        width: 97.5%;
+       
+    }
+    .services-title{
+        font-size: 2em;
+        padding: 0.1em;
+        margin-top: 1em;
+        text-align: center;
+    }
+    .services-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .services-card{
+        font-size: 1em;
+        align-items: center; 
+        margin-bottom: 2em;
+    }
+    .Learning{
+        width: 97.5%;
+        padding: .1em 1em;
+    }
+    .Learning-title{
+        font-size: 2em;
+        padding: 0.1em;
+        margin-top: 2em;
+        text-align: center;
+    }
+    .Learning-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact{
+        padding: .1em 1em;
+        width: 97.5%;
+    }
+    .contact-title{
+        font-size: 2em;
+        padding: 0.1em;
+        margin-top: 1em;
+        text-align: center;
+    }
+         
+    .contact-card{
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0.1em;
+    }
+    .contact-icon{
+        font-size:2em;
+    }
+    .contact-info{
+        font-size: 1.2em;
+        padding: 1em 1.1em;
+    }
+    .footer{
+        font-size: 0.8em;
+        width: 97.5%;
+    }
+    .footer-icons{
+        
+        /* margin: 1px 55px 1px 1px;*/
+      /*  padding: .1em .1em;*/
+    }
+    .footer-title{
+       font-size: 0.9em;
+    
+    }
+  
+}
+ /*media iphone-x 3*/
+ 
+ @media (max-width: 280px) {
+    header{
+        width: 96.5%;
+      /*  padding: 0.4em;*/
+        align-items: center;
+     
+    }
+    img#photo-logo{
+        width: 38px; 
+        border-radius : 100%;
+    }
+    .logoname a{
+        font-size: 0.5em;
+    }
+    .navigation{
+        font-size: 0.3em;
+        padding : 0.1em;
+    }
+    .tite{
+       font-size: 0.8em;
+    }
+    .section{
+        padding: 10px 15px;
+    }
+    .main{
+        padding: .1em 1em;
+        width: 96.5%;
+        align-items: center;
+        background-position:  74% 70%;
+        background-attachment: fixed;
+        
+    }
+    .main h2{
+        font-size: 1.3em;
+    }
+    .main h2 span{
+        font-size: 1.3em;
+    }
+    .main h3{
+        font-size: 1.1em;
+    }
+    .main-btn{
+        font-size: 0.9em;
+    }
+    .social-icons{
+        font-size: 0.8em;
+    }
+    .services{
+        padding: .1em 1em;
+        width: 96.5%;
+       
+    }
+    .services-title{
+        font-size: 2em;
+        padding: 0.1em;
+        margin-top: 1em;
+        text-align: center;
+    }
+    .services-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .services-card{
+        font-size: 1em;
+        align-items: center; 
+        margin-bottom: 2em;
+    }
+    .Learning{
+        width: 96.5%;
+        padding: .1em 1em;
+    }
+    .Learning-title{
+        font-size: 2em;
+        padding: 0.1em;
+        margin-top: 2em;
+        text-align: center;
+    }
+    .Learning-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact{
+        padding: .1em 1em;
+        width: 96.5%;
+    }
+    .contact-title{
+        font-size: 2em;
+        padding: 0.1em;
+        margin-top: 1em;
+        text-align: center;
+    }
+         
+    .contact-card{
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0.1em;
+    }
+    .contact-icon{
+        font-size:2em;
+    }
+    .contact-info{
+        font-size: 1.2em;
+        padding: 1em 1.1em;
+    }
+    .footer{
+        font-size: 0.5em;
+        width: 98.5%;
+    }
+    .footer-icons{
+        
+        /* margin: 1px 55px 1px 1px;*/
+      /*  padding: .1em .1em;*/
+    }
+    .footer-title{
+       font-size: 0.9em;
+    
+    }
+  
+}
