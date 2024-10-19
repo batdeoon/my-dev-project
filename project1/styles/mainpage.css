@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Matemasie&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 *{
+    /* بحذف السطر ٥ لان عائلة الخط هذي غير موجودة شلتها*/
     font-family: 'Poppins, sans-serif';
     margin: 0;
     padding: 0;
